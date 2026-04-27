@@ -1,0 +1,88 @@
+[debug] [2026-04-25T19:24:03.051Z] ----------------------------------------------------------------------
+[debug] [2026-04-25T19:24:03.053Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VIVEK  KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2026-04-25T19:24:03.053Z] CLI Version:   15.15.0
+[debug] [2026-04-25T19:24:03.053Z] Platform:      win32
+[debug] [2026-04-25T19:24:03.053Z] Node Version:  v22.15.0
+[debug] [2026-04-25T19:24:03.053Z] Time:          Sun Apr 26 2026 00:54:03 GMT+0530 (India Standard Time)
+[debug] [2026-04-25T19:24:03.053Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\VIVEK  KUMAR\Desktop\crisis-coordinator
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-04-25T19:25:27.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-25T19:25:27.571Z] > authorizing via signed-in user (vicky45vivek@gmail.com)
+[debug] [2026-04-25T19:25:27.573Z] Checked if tokens are valid: false, expires at: 1777141011568
+[debug] [2026-04-25T19:25:27.573Z] Checked if tokens are valid: false, expires at: 1777141011568
+[debug] [2026-04-25T19:25:27.573Z] > refreshing access token with scopes: []
+[debug] [2026-04-25T19:25:27.575Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-25T19:25:27.576Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-25T19:25:27.794Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-25T19:25:27.794Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-25T19:25:27.808Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-04-25T19:25:28.687Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-04-25T19:25:28.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Functions Setup
+[debug] [2026-04-25T19:25:34.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-25T19:25:34.443Z] > authorizing via signed-in user (vicky45vivek@gmail.com)
+[debug] [2026-04-25T19:25:34.443Z] [iam] checking project crisis-coordinator for permissions ["firebase.projects.get"]
+[debug] [2026-04-25T19:25:34.443Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:34.443Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:34.443Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/crisis-coordinator:testIamPermissions [none]
+[debug] [2026-04-25T19:25:34.443Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/crisis-coordinator:testIamPermissions  x-goog-user-project=crisis-coordinator
+[debug] [2026-04-25T19:25:34.443Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crisis-coordinator:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-04-25T19:25:35.925Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/crisis-coordinator:testIamPermissions 200
+[debug] [2026-04-25T19:25:35.925Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crisis-coordinator:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-04-25T19:25:35.926Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:35.926Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:35.926Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:35.926Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:35.926Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-04-25T19:25:35.926Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com  x-goog-user-project=crisis-coordinator
+[debug] [2026-04-25T19:25:35.927Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/runtimeconfig.googleapis.com [none]
+[debug] [2026-04-25T19:25:35.927Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/runtimeconfig.googleapis.com  x-goog-user-project=crisis-coordinator
+[debug] [2026-04-25T19:25:37.773Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/runtimeconfig.googleapis.com 200
+[debug] [2026-04-25T19:25:37.773Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2026-04-25T19:25:37.829Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com 200
+[debug] [2026-04-25T19:25:37.829Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-04-25T19:25:37.829Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:37.829Z] Checked if tokens are valid: true, expires at: 1777148726794
+[debug] [2026-04-25T19:25:37.830Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2026-04-25T19:25:37.830Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com:enable  x-goog-user-project=crisis-coordinator
+[debug] [2026-04-25T19:25:38.354Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2026-04-25T19:25:38.354Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/crisis-coordinator/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2026-04-25T19:26:30.006Z] Running command with virtualenv: command="C:\Users\VIVEK  KUMAR\Desktop\crisis-coordinator\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2026-04-25T19:26:33.461Z] Error: spawn "C:\Users\VIVEK  KUMAR\Desktop\crisis-coordinator\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\VIVEK  KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\VIVEK  KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\VIVEK  KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    at Process.callbackTrampoline (node:internal/async_hooks:130:17)
+[error] 
+[error] Error: An unexpected error has occurred.
