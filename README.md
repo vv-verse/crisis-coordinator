@@ -1,4 +1,5 @@
 # 🚨 Crisis Coordinator
+      AI powered Resource Allocation
 
 An AI system that turns messy field reports into clear, prioritized action — in seconds.
 
