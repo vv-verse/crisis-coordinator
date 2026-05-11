@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚨 Crisis Coordinator
+      AI powered Resource Allocation
 
-## Getting Started
+An AI system that turns messy field reports into clear, prioritized action — in seconds.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔗 Live
+
+* Dashboard: https://crisis-coordinator-397633197942.asia-south1.run.app
+* Submit: https://crisis-coordinator-397633197942.asia-south1.run.app/submit
+
+---
+
+## The problem
+
+In real crisis situations, information doesn’t arrive neatly.
+
+It comes as:
+
+* voice notes
+* WhatsApp messages
+* rushed text updates
+* incomplete reports
+
+Someone has to read everything, understand it, prioritize it, and assign help.
+
+That “someone” is usually a coordinator — and it takes hours.
+
+That delay costs lives.
+
+---
+
+## What this does
+
+Crisis Coordinator acts like a real-time decision assistant.
+
+You drop in a raw report, and within seconds it:
+
+* understands what’s happening
+* scores urgency (0–100)
+* extracts key details
+* surfaces it on a live dashboard
+* keeps everything sorted by priority
+
+No manual sorting. No backlog.
+
+---
+
+## Core capabilities
+
+* **AI classification**
+  Gemini analyzes each report and assigns category, urgency, and context.
+
+* **Live dashboard**
+  Incoming reports appear instantly, ordered by urgency.
+
+* **Coordinator briefing**
+  One click → AI summarizes the current situation in plain language.
+
+* **Signal over noise**
+  High-risk reports stand out immediately.
+
+* **Extensible system**
+  Volunteer matching, escalation logic, and duplicate detection are built to scale.
+
+---
+
+## How it works
+
+```
+Submit report → Firestore  
+             → Cloud Function (triggered)  
+             → Gemini 2.5 processes it  
+             → Structured output saved  
+             → Dashboard updates in real time
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Everything happens automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stack
 
-## Learn More
+* **Frontend** — Next.js + Tailwind
+* **Backend** — Cloud Functions (Python, Gen2)
+* **AI** — Gemini 2.5 Flash
+* **Database** — Firebase Firestore
+* **Hosting** — Cloud Run
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git clone https://github.com/vv-verse/crisis-coordinator
+cd crisis-coordinator
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+Add your Firebase config in `.env.local`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Example
+
+Input:
+"Medical emergency near river bridge, 50 people sick, no doctor"
+
+Output:
+- Category: Medical  
+- Urgency: 92  
+- Summary: Large-scale illness, immediate medical response needed
+
+## Why this matters
+
+This isn’t just automation.
+
+It’s about removing the delay between **information** and **action**.
+
+When every minute matters, clarity is everything.
+
+---
+
+
