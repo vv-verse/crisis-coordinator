@@ -148,12 +148,12 @@ export default function SubmitPage() {
             <button onClick={handleSubmit}
               disabled={!text.trim() || submitting}
               className="flex-1 py-3 bg-blue-600 text-white text-sm font-bold rounded-xl hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shadow-sm">
-              {submitting ? '⏳ Submitting...' : '🚀 Submit Report'}
+              {submitting ? '⏳ Submitting...' : ' Submit Report'}
             </button>
           </div>
 
           <div className="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-4">
-            <p className="text-xs text-blue-800 font-medium">🤖 After submission, Gemini AI will automatically:</p>
+            <p className="text-xs text-blue-800 font-medium"> After submission, Gemini AI will automatically:</p>
             <ul className="text-xs text-blue-700 mt-2 space-y-1 list-disc list-inside">
               <li>Classify the emergency type</li>
               <li>Assign an urgency score (0–100)</li>

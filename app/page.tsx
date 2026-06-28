@@ -274,7 +274,7 @@ export default function Dashboard() {
         <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h2 className="text-base font-bold text-gray-900">🤖 AI Coordinator Briefing</h2>
+              <h2 className="text-base font-bold text-gray-900"> AI Coordinator Briefing</h2>
               <p className="text-xs text-gray-500 mt-0.5">Gemini analyzes all active reports and generates a situation summary</p>
             </div>
             <button onClick={fetchBriefing} disabled={loadingBriefing}
